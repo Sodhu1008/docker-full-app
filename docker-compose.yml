@@ -1,6 +1,6 @@
 services:
   web:
-    image: my-html-app
+    build: .
     ports:
       - "8080:80"
 
