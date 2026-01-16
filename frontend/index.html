@@ -5,18 +5,5 @@
 </head>
 <body>
   <h2>Message from Backend:</h2>
-  <p id="message">Loading...</p>
-
-  <script>
-    fetch("http://backend:3000/api/message")
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("message").innerText = data.message;
-      })
-      .catch(err => {
-        document.getElementById("message").innerText = "Backend not reachable";
-        console.error(err);
-      });
-  </script>
 </body>
 </html>
