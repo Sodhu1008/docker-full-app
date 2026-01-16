@@ -7,9 +7,9 @@ const PORT = 3000;
 app.use(cors());
 
 app.get("/api/message", (req, res) => {
-  res.json({ message: "Hello from Backend (Docker) 🚀" });
+  res.json({ message: "Hello from Backend 🚀" });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Backend running on port ${PORT}`);
 });
